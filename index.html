@@ -1,0 +1,29 @@
+<!doctype html>
+  <head>
+    <title>Connect 4</title>
+    <link href="connect4.css" rel="stylesheet">
+  </head>
+    <body>
+
+      <div>
+        <form>
+          <label for="color1">Player 1 Color: </label>
+          <input type="text" id="color1" name="color1" placeholder="player 1 color" required> &nbsp
+          <label for="color2">Player 2 Color: </label>
+          <input type="text" id="color2" name="color2" placeholder="player 2 color" required> <br>
+          <label for="height">Height: </label>
+          <input type="number" id="height" name="height" max="15" value=6 required> &nbsp
+          <label for="width">Width: </label>
+          <input type="number" id="width" name="width" max="20" value=7 required>
+          <input type="submit" id="startBtn" value="Start Game">
+        </form>
+      </div>
+
+      <div id="game">
+        <table id="board"></table>
+      </div>
+
+    <script src="connect4.refactored.js"></script>
+
+  </body>
+</html>
